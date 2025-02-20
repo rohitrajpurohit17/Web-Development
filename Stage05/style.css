@@ -1,0 +1,16 @@
+/* . is use for specifying classes */
+.yellow{
+    color: yellow;
+}
+/* # is use for id  */
+#divfirst{
+    background-color: red;
+}
+/* Here background color is given using ELement name */
+span{
+    background-color: aqua;
+}
+
+.blue{
+    background-color: blue;
+}
