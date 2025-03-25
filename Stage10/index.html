@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Selectors </title>
+    <style>
+        /* Element Selector */
+        div{
+            background-color: red;
+        }
+        /* Class Selector */
+        .blue{
+            background-color: aqua;
+        }
+        #yellow{
+            background-color: yellow;
+        }
+
+        /* Child Slector */
+        div > p {
+            background-color: black;
+            color: white;
+        }
+        /* Descendant Selector */
+        .child p{
+            background-color: blueviolet;
+        }
+
+        /* UNIVERSAL Selector */
+        * {
+            margin:0;
+            padding: 0;
+        }
+        /* Pseudo Selector */
+        a:visited{
+            color: pink;
+        }
+        /* UNVISITED Link */
+        a:link{
+            color: black;
+        }
+        /* Color  Change when Click */
+        a:active{
+            background-color:goldenrod ;
+        }
+        a:hover{
+            background-color: aqua;
+        }
+
+        .one :first-child{
+            background-color: green;
+        }
+    </style>
+</head>
+<body> 
+    <main class="one">
+        <p>First Child</p>
+        <p>Second Child</p>
+    </main>
+
+     <div> Hi, I'm element Selector
+        <p>Hello this example of child selector</p>
+     </div>
+     <div class="blue">Hi, I'm CLASS Selector</div>
+    <div id="yellow">Hi, I'm ID Selector</div>
+
+    <!-- Here CHILD Seelector Doesn't Work -->
+    <div>
+        <article>
+            <p>
+            I'm an Example of CHILD Selector will not work
+            </p>
+        </article>
+    </div>
+    <!-- Descendant Selector [Force Full CHILD Selector] -->
+     <div class="child">
+        <article>
+            <p>
+                Here I'm an example of child slector that will run in any case
+            </p>
+        </article>
+     </div>
+     <h1> <a href="https://www.google.com">GOOGLE</a></h1>
+</body>
+</html>
