@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+        h1{ 
+            /* For Alinginment of Text */
+            text-align: center;
+            /* It's just about FIRSt Letter of Word */
+            text-transform: capitalize;
+            /* To UnderLine */
+            text-decoration:underline;
+            text-decoration-color: aqua;
+            text-decoration-style: dotted;
+            text-decoration-thickness: 20px;
+            /* To set Type of Font */
+            font-family:Arial, Helvetica, sans-serif;
+            /* for font size  */
+            font-size: 50px;
+
+            /* Kinda space */
+            text-indent: 50px;
+        }
+        p {
+            font-family: "Boldonse", system-ui;
+            /* font-family: 'Times New Roman', Times, serif; */
+            /* To BOLD THE Font */
+            font-weight : 1000;
+            /* To give Italic  */
+            font-style: italic;
+        }
+        .para{
+            border: 2px solid black;
+            width: 145px;
+            overflow: hidden;
+            /* This will breaks the word */
+            word-break: break-all;
+            /* text-overflow: ellipsis; */
+        }
+    </style>
+</head>
+<body>
+    <h1>Font Styling</h1>
+    <p>This page for test different fonts</p>
+    <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, sit distinctio, perspiciatis pariatur veritatis aliquam aut repellendus aperiam labore reiciendis tempore deserunt, ex placeat? Odio quis sed dolor necessitatibus, culpa ipsa voluptates molestias quo vel sapiente iste dolorem vitae eligendi?</p>    
+</body>
+</html>
