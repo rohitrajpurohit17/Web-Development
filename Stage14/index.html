@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SPECIFICITY</title>
+    <style>
+        /* Inline style > id selector > class and attribute selector
+            > Element Selector > Universal Selector */
+        /* Inlne style has higher prefernce */
+        h1 {
+            color: black;
+        }
+
+        /* Order Matter last one has highest prefernce */
+        .cred {
+            color: red;
+        }
+
+        .cgreen {
+            color: green;
+        }
+
+        .cblue {
+            color: blue;
+        }
+
+        /* Attribute Selector */
+        [data-a=x] {
+            background-color: red;
+        }
+
+        /* We have to Use !important to Overridr Inline CSS */
+        h2 {
+            color: blueviolet !important;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="cred cblue cgreen" data-a=x>
+        Hello Css specificity
+    </h1>
+    <h2 style="color: aqua;"> To override INLINE CSS</h2>
+</body>
+
+</html>
