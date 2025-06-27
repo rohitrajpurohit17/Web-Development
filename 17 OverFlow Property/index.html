@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OverFlow</title>
+    <style>
+        .box{
+            height: 20vw;
+            width:20vw;
+            border: solid black 2px;
+
+            /* This will automatically give you 
+            the scroll bar  */
+            overflow: auto;
+
+            /* This will make the content in 
+            a straight line not gonna print dowmn side  */
+            white-space: nowrap;
+
+            /* this will show ... and gonna erase farther data or content */
+            text-overflow: ellipsis;
+
+            /* this to work as x and y axis same x bar and y bar */
+            overflow-y: auto;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit dolores perspiciatis delectus autem natus quis cum pariatur unde corrupti quaerat. Quo minus obcaecati commodi!
+    </div>
+</body>
+</html>
