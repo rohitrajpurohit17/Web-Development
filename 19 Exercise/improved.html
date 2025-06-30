@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise</title>
+  <style>
+    /* Reset and box model fix */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Fullscreen dark background with flex centering */
+    body {
+      background-color: rgb(14, 14, 14); /* dark background */
+      display: flex;
+      justify-content: center; /* center horizontally */
+      align-items: center; /* center vertically */
+      height: 100vh;
+      font-family: Arial, sans-serif; /* consistent font */
+    }
+
+    /* Outer container (gray card wrapper) */
+    .box {
+      background-color: rgb(214, 216, 217); /* light gray background */
+      width: 30vw;
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Main card */
+    .card {
+      background-color: aliceblue;
+      width: 25vw;
+      height: 80vh;
+      border-radius: 20px; /* rounded corners */
+      display: flex;
+      flex-direction: column; /* vertical stacking of children */
+      align-items: center;
+      padding: 16px;
+      overflow: hidden; /* hides overflow like big image edges */
+    }
+
+    /* Image container */
+    .img {
+      width: 100%;
+      border-radius: 20px;
+      overflow: hidden; /* ensures the image corners are clipped */
+    }
+
+    /* Image itself */
+    .img img {
+      width: 100%; /* responsive width */
+      height: auto;
+      border-radius: 20px; /* rounded image corners */
+      object-fit: cover; /* preserves aspect ratio */
+    }
+
+    /* Tag container */
+    .tags {
+      margin: 12px 0;
+      text-align: center;
+    }
+
+    /* Individual tag style */
+    .tag {
+      background-color: #e5e7eb;
+      border-radius: 9999px; /* pill shape */
+      padding: 6px 12px;
+      margin: 4px;
+      display: inline-block;
+      font-size: 12px;
+      color: #374151;
+    }
+
+    /* Heading for card */
+    h1 {
+      margin: 10px 0;
+      font-size: 20px;
+      color: #111827;
+    }
+
+    /* Paragraph for description */
+    p {
+      margin: 8px 0;
+      font-size: 14px;
+      color: #6b7280;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    /* Button styling */
+    .btn {
+      margin-top: auto; /* pushes button to bottom */
+      padding: 10px 20px;
+      border: none;
+      border-radius: 9999px; /* pill shape */
+      color: #006aff;
+      font-weight: bold;
+      background-color: rgb(114, 255, 255);
+      cursor: pointer;
+      transition: background-color 0.3s ease; /* smooth hover */
+    }
+
+    /* Button hover effect */
+    .btn:hover {
+      background-color: rgb(2, 228, 228);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Outer container -->
+  <div class="box">
+
+    <!-- Card content -->
+    <div class="card">
+
+      <!-- Image section -->
+      <div class="img">
+        <img src="anime.png" alt="Anime Image" />
+      </div>
+
+      <!-- Tags -->
+      <div class="tags">
+        <span class="tag">Nature</span>
+        <span class="tag">Lake</span>
+      </div>
+
+      <!-- Title -->
+      <h1>Lago di Baros</h1>
+
+      <!-- Description text -->
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
+        ad exercitationem odit in aspernatur mollitia.
+      </p>
+
+      <!-- Call-to-action button -->
+      <button type="submit" class="btn">Read More</button>
+
+    </div>
+  </div>
+</body>
+
+</html>
