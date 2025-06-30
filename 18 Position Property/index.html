@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Property</title>
+        <style>
+            *{
+                margin:0px;
+                padding:0px;
+            }
+            .box1{
+                background-color: aqua;
+                /* position: absolute; */
+               
+               
+               /* Fixed always stay fixed on top
+               but sticky comes on top when we scroll 
+               away from it's actual position */
+                position: sticky;
+                top: 0px;
+                margin: 0px;
+                padding: 0px;
+                height: 300px;
+                width: 111px;
+            
+               
+            }
+            .box{
+                /* By Default Position is Static  */
+                height: 30vw;
+                width: 50vw;
+            margin: 3px;
+            padding: 3px;
+            border: 2px solid black;
+        }
+        .parent{
+            margin:50px;
+            padding:50px;
+            border: 2px solid black;
+            
+        }
+        .box2{
+            background-color: aquamarine;
+
+             /* It is use to make it relative and can perform operation related to Position
+            position: relative;
+            /* Like this  */
+             /* top: 100px;
+            left: 50px */
+        }  
+        .box3{
+            background-color: brown;
+            /* it stays fixed like a add on page on top  */
+            /* position: fixed; */
+            top: 20px;
+            left: 50px;
+        }
+        .box4{
+            background-color: yellow;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+</html>
